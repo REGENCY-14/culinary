@@ -1,13 +1,14 @@
+import { rubik } from "@/font/Font";
 import React from "react";
 import { IoMenuOutline } from "react-icons/io5";
 
 const Navbar = () => {
   return (
     <>
-      <div className="h-[115px] w-full border">
+      <div className="h-[115px] w-full border-b-[#D27722] lg:border fixed bg-white z-10">
         <div className="flex pt-[29px] pl-[32px] pr-[32px] gap-[32px] justify-between ">
           <div className="flex gap-10">
-            <p className="text-[#D27722] font-[700] text-[32px]">COOK</p>
+            <p className={`text-[#D27722] font-[700] text-[32px] ${rubik.className}`}>COOK</p>
             {/* large screen components */}
             <div className="hidden lg:flex space-x-6 justify-center
             items-center">
