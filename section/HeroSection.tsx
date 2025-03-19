@@ -61,7 +61,7 @@ export default function HeroSection() {
               culinary knowledge, and join our growing foodie community. With
               COOK, learning, and teaching becomes a shared passion.
             </p>
-            <div className="place-self-center lg:place-self-start">
+            <div className="place-self-center lg:place-self-start ">
               <button
                 className={`bg-white text-black ${rubik.className} pt-8 flex justify-center items-center lg:place-self-start place-self-center gap-2 lg:hidden`}
               >
