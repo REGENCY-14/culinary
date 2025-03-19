@@ -14,8 +14,8 @@ export default function HeroSection() {
   return (
     <>
       <div className="top-[115px] relative">
-        <div className="lg:flex lg:flex-row-reverse lg:mr-8">
-          <div className="relative w-full h-[281px] md:rounded-[32px] overflow-hidden md:w-[586px] md:h-[385px] place-self-center lg:w-[518px] lg:[407px]">
+        <div className="lg:flex lg:flex-row-reverse lg:mr-10">
+          <div className="relative w-full h-[281px] md:rounded-[32px] overflow-hidden md:w-[586px] md:h-[385px] place-self-center lg:w-1/2 lg:[407px]">
             <Image
               src="/images/hero.jpeg"
               alt="Hero Section"
@@ -47,26 +47,32 @@ export default function HeroSection() {
               </p>
             </div>
           </div>
-          <div className="relative text-center w-full h-[446px] lg:text-left lg:mt-8 place-self-center lg:mx-6 ">
-            <h1 className="text-[32px] md:text-[50px] font-[700] px-9  ">
+          <div className="relative text-center w-full h-[446px] lg:text-left lg:mt-8 place-self-center lg:w-1/2 lg:ml-10">
+            <h1 className="text-[32px] md:text-[50px] font-[700]   ">
               Master the Art of Cooking with{" "}
               <span className={`text-[#D27722] ${pacifico.className}`}>
                 Experts
               </span>{" "}
               Worldwide{" "}
             </h1>
-            <p className={`pt-6 ${rubik.className} md:text-[16px] lg:text-left lg:mx-9`}>
+            <p className={`pt-6 ${rubik.className} md:text-[16px] lg:text-left px-4`}>
               Experience the joy of cooking in a whole new way with our engaging
               online cooking classes. Learn from the chefs, share your unique
               culinary knowledge, and join our growing foodie community. With
               COOK, learning, and teaching becomes a shared passion.
             </p>
-            <div className="place-self-center ">
+            <div className="place-self-center lg:place-self-start">
               <button
-                className={`bg-white text-black ${rubik.className} pt-8 flex justify-center items-center place-self-center gap-2`}
+                className={`bg-white text-black ${rubik.className} pt-8 flex justify-center items-center lg:place-self-start place-self-center gap-2 lg:hidden`}
               >
                 <FiPlayCircle className="text-[#D27722]" />
                 Watch a video
+              </button>
+              <button
+                className={`bg-white text-black ${rubik.className} pt-8 justify-center items-center lg:place-self-start place-self-center gap-2 hidden lg:flex`}
+              >
+                <FiPlayCircle className="text-[#D27722]" />
+                Learn more in the COOK video
               </button>
               <div className="justify-around flex flex-col md:block md:space-x-3">
                 <button className="w-[326px] rounded-[4px] h-[39px] bg-[#D27722] mt-3 text-white md:w-[153px] ">
@@ -82,7 +88,7 @@ export default function HeroSection() {
           </div>
 
           <div
-            className={`bg-[#FFFDF4] h-[604px] w-[326px] mt-5 place-self-center ${rubik.className} place-content-center grid md:flex gap-10 md:w-[738px] md:h-[143px] md:justify-center md:items-center text-center`}
+            className={`bg-[#FFFDF4] h-[604px] w-[326px] mt-20 place-self-center ${rubik.className}  grid md:flex gap-10 md:w-[738px] md:h-[143px] md:justify-center md:items-center text-center lg:w-[1085px] justify-evenly lg:gap-20 p-4`}
           >
             {comment.map((content, index) => (
               <div key={index}>
