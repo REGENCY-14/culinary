@@ -40,11 +40,11 @@ export default function ExploreAndLearnSection() {
     <>
       <div className={`relative top-[115px] mt-10 ${rubik.className}`}>
         <h1 className="text-[30px] font-[600] text-center">Explore & Learn</h1>
-        <div className="relative md:grid md:grid-cols-2 mt-10 flex flex-col gap-3 justify-between md:w-[734px] mx-auto lg:grid lg:grid-cols-3 lg:w-[1313px] px-2">
+        <div className="relative md:grid md:grid-cols-2 mt-10 flex flex-col gap-3 justify-between md:w-[734px] mx-auto lg:grid lg:grid-cols-3 lg:w-[1313px] px-2"> 
           {cardContent.map((card, index) => (
               <div
                 key={index}
-                className="w-[326px] h-[118px] bg-[#D27722] rounded-[16px] text-white flex items-center md:justify-center gap-4  px-4 place-self-center md:w-[355px] lg:w-[421.67px]"
+                className="w-[326px] h-[118px] bg-[#D27722] rounded-[16px] text-white flex items-center md:justify-center gap-4  px-4 place-self-center md:w-[355px] lg:w-[421.67px] "
               >
                 <Image
                   src={card.img}

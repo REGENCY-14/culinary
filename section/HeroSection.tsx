@@ -24,7 +24,7 @@ export default function HeroSection() {
             />
           </div>
           <div className="md:flex md:ml-10">
-            <div className="relative w-[325px] h-[200px] bg-[#FFDBB8] rounded-[16px] bottom-[90px] place-self-center lg:hidden">
+            <div className="relative w-[325px] h-[200px] bg-[#FFDBB8] rounded-[16px] bottom-[90px] place-self-center lg:hidden border border-[#D27722]">
               <div className="flex gap-5 pt-6 px-10">
                 <div className="relative h-[65px] w-[65px] rounded-[45px] overflow-hidden">
                   <Image
@@ -88,7 +88,7 @@ export default function HeroSection() {
           </div>
 
           <div
-            className={`bg-[#FFFDF4] h-[604px] w-[326px] mt-20 place-self-center ${rubik.className}  grid md:flex gap-10 md:w-[738px] md:h-[143px] md:justify-center md:items-center text-center lg:w-[1085px] justify-evenly lg:gap-20 p-4`}
+            className={`bg-[#FFFDF4] h-[604px] w-[326px] mt-20 place-self-center ${rubik.className}  grid md:flex gap-10 md:w-[738px] md:h-[143px] md:justify-center md:items-center text-center lg:w-[1085px] justify-evenly lg:gap-20 p-4 border border-[#D27722]`}
           >
             {comment.map((content, index) => (
               <div key={index}>
