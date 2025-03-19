@@ -29,11 +29,11 @@ export default function OurUniqueBenefits() {
         <h1 className="text-[30px] font-[600] text-center">
           Our Unique Benefits
         </h1>
-        <div>
-          <div className="w-[326px] h-[332px] place-self-center mt-10">
+        <div className="">
+          <div className="lg:flex lg:place-content-center lg:gap-[27px]">
             {benefits.map((content,index) => (
-              <div key={index} className="mt-8">
-                <div className="w-[110px] h-[110px] rounded-[111px] bg-[#D27722] place-self-center flex justify-center items-center">
+              <div key={index} className="mt-8 w-[326px] h-[332px] place-self-center md:w-[585px] md:h-[279px]  lg:w-[390px] lg:h-[390px] ">
+                <div className="w-[110px] h-[110px] rounded-[111px] bg-[#D27722] place-self-center flex justify-center items-center ">
                   <Image
                     src={content.img}
                     alt=""
@@ -43,8 +43,8 @@ export default function OurUniqueBenefits() {
                   />
                 </div>
                 <div className="text-center">
-                  <h1 className="text-[28px] font-[600]">{content.topic}</h1>
-                  <p className="text-[18px] font-[400]">
+                  <h1 className="text-[28px] mt-3 lg:text-[32px] lg:font-[600]  font-[600]">{content.topic}</h1>
+                  <p className="text-[18px] font-[400] mt-2 lg:text-[18px] lg:font-[400]">
               {content.content}
                   </p>
                 </div>
