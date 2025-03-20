@@ -25,7 +25,7 @@ export default function OurUniqueBenefits() {
   ];
   return (
     <>
-      <div className={`relative top-[115px] mt-10 ${rubik.className}`}>
+      <div className={`relative mt-10 ${rubik.className} top-[115px]`}>
         <h1 className="text-[30px] font-[600] text-center">
           Our Unique Benefits
         </h1>

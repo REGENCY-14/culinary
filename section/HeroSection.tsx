@@ -88,7 +88,7 @@ export default function HeroSection() {
           </div>
 
           <div
-            className={`bg-[#FFFDF4] h-[604px] w-[326px] mt-20 place-self-center ${rubik.className}  grid md:flex gap-10 md:w-[738px] md:h-[143px] md:justify-center md:items-center text-center lg:w-[1085px] justify-evenly lg:gap-20 p-4 border border-[#D27722]`}
+            className={`bg-[#FFFDF4] h-[604px] w-[326px] mt-20 place-self-center ${rubik.className}  grid md:flex gap-10 md:w-[738px] md:h-[143px] md:justify-center md:items-center text-center lg:w-full justify-evenly lg:gap-20 p-4 border border-[#D27722]`}
           >
             {comment.map((content, index) => (
               <div key={index}>
