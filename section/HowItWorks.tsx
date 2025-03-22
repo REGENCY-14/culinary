@@ -36,8 +36,8 @@ export default function HowItWorks() {
         <div className="mt-15 place-content-center">
           {works.slice(0, 1).map((content, index) => (
             <div key={index}>
-              <div className="w-full mt-8">
-                <Image src={content.img} alt="" width={500} height={1} />
+              <div className="w-full mt-8 md:w-full">
+                <Image src={content.img} alt="" width={1000} height={1} />
               </div>
               <div className="mt-5 px-5">
                 <h1 className="text-[28px] font-[600] mr-15">
@@ -55,7 +55,7 @@ export default function HowItWorks() {
           {works.slice(1, 2).map((content, index) => (
             <div key={index}>
               <div className="w-full mt-8">
-                <Image src={content.img} alt="" width={500} height={1} />
+                <Image src={content.img} alt="" width={1000} height={1} />
               </div>
               <div className="mt-5 px-5">
                 <h1 className="text-[28px] font-[600] mr-15">
@@ -67,8 +67,8 @@ export default function HowItWorks() {
           ))}
           {works.slice(2, 3).map((content, index) => (
             <div key={index}>
-              <div className="w-full mt-8">
-                <Image src={content.img} alt="" width={500} height={1} />
+              <div className="w-full mt-8 ">
+                <Image src={content.img} alt="" width={1000} height={1} />
               </div>
               <div className="mt-5 px-5">
                 <h1 className="text-[28px] font-[600] mr-15">
@@ -94,8 +94,8 @@ export default function HowItWorks() {
               className=""
             />
           </div>
-          <div className="relative bottom-[50px] w-[326px] h-[351px] place-self-center md:w-[585px] md:h-[279px]  lg:w-[390px] lg:h-[390px] border border-[#D27722] rounded-[16px] bg-[#FFFDF4]">
-            <div className="w-[287px] h-[221px] place-self-center mt-20">
+          {/* <div className="relative bottom-[50px] w-[326px] h-[351px] place-self-center md:w-[585px] md:h-[279px]  lg:w-full lg:h-[390px] border border-[#D27722] rounded-[16px] bg-[#FFFDF4]">
+            <div className="w-[287px] h-[221px] md:w-[473px] place-self-center mt-20">
               <h1 className="text-center text-[28px] font-[600]">
                 Money-back guarantee
               </h1>
@@ -105,7 +105,7 @@ export default function HowItWorks() {
                 dolor sit amet.{" "}
               </p>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </>
