@@ -35,52 +35,60 @@ export default function HowItWorks() {
 
         <div className="mt-15 place-content-center">
           {works.slice(0, 1).map((content, index) => (
-            <div key={index}>
-              <div className="w-full mt-8 md:w-full">
+            <div key={index} className="lg:flex">
+              <div className="w-full mt-8 md:w-[450px] place-self-center lg:w-1/2">
                 <Image src={content.img} alt="" width={1000} height={1} />
               </div>
-              <div className="mt-5 px-5">
-                <h1 className="text-[28px] font-[600] mr-15">
-                  {content.topic}
-                </h1>
-                <p className="mt-3 text-[18px] ">{content.content}</p>
-              </div>
-              <div className="place-self-center mt-5">
-                <button className="w-[157px] h-[41px] bg-[#D27722] text-white rounded-[4px]">
-                  Browse Tutors
-                </button>
+              <div className="lg:w-1/2 lg:place-self-center px-5">
+                <div className="mt-5 ">
+                  <h1 className="text-[28px] font-[600] mr-15">
+                    {content.topic}
+                  </h1>
+                  <p className="mt-3 text-[18px] ">{content.content}</p>
+                </div>
+                <div className="place-self-center mt-5 lg:place-self-start">
+                  <button className="w-[157px] h-[41px] bg-[#D27722] text-white rounded-[4px]">
+                    Browse Tutors
+                  </button>
+                </div>
               </div>
             </div>
           ))}
           {works.slice(1, 2).map((content, index) => (
-            <div key={index}>
-              <div className="w-full mt-8">
+            <div key={index} className="lg:flex lg:flex-row-reverse">
+              <div className="mt-8 w-full md:w-[450px] place-self-center lg:w-1/2 px-5">
                 <Image src={content.img} alt="" width={1000} height={1} />
               </div>
-              <div className="mt-5 px-5">
-                <h1 className="text-[28px] font-[600] mr-15">
-                  {content.topic}
-                </h1>
-                <p className="mt-3 text-[18px] ">{content.content}</p>
+              <div className="lg:w-1/2 lg:place-self-center px-5">
+                <div className="mt-5 ">
+                  <h1 className="text-[28px] font-[600] mr-15">
+                    {content.topic}
+                  </h1>
+                  <p className="mt-3 text-[18px] ">{content.content}</p>
+                </div>
               </div>
             </div>
           ))}
           {works.slice(2, 3).map((content, index) => (
-            <div key={index}>
-              <div className="w-full mt-8 ">
+            <div key={index} className="lg:flex">
+              <div className="w-full mt-8 px-5 md:w-[450px] lg:w-1/2 place-self-center">
                 <Image src={content.img} alt="" width={1000} height={1} />
               </div>
-              <div className="mt-5 px-5">
-                <h1 className="text-[28px] font-[600] mr-15">
-                  {content.topic}
-                </h1>
-                <p className="mt-3 text-[18px] ">{content.content}</p>
-              </div>
-              <div className="place-self-center mt-5">
+              <div className="lg:w-1/2 lg:place-self-center px-5">
+                <div className="mt-5 px-5">
+                  <h1 className="text-[28px] font-[600] mr-15">
+                    {content.topic}
+                  </h1>
+                  <p className="mt-3 text-[18px] ">{content.content}</p>
+                </div>
+
+              <div className="place-self-center mt-5 lg:place-self-start">
                 <button className="w-[157px] h-[41px] bg-[#D27722] text-white rounded-[4px]">
                   Sign up for free
                 </button>
               </div>
+              </div>
+
             </div>
           ))}
         </div>
@@ -94,7 +102,7 @@ export default function HowItWorks() {
               className=""
             />
           </div>
-          {/* <div className="relative bottom-[50px] w-[326px] h-[351px] place-self-center md:w-[585px] md:h-[279px]  lg:w-full lg:h-[390px] border border-[#D27722] rounded-[16px] bg-[#FFFDF4]">
+          <div className="relative bottom-[50px] w-[326px] h-[351px] place-self-center md:w-[585px] md:h-[279px] border border-[#D27722] rounded-[16px] bg-[#FFFDF4]">
             <div className="w-[287px] h-[221px] md:w-[473px] place-self-center mt-20">
               <h1 className="text-center text-[28px] font-[600]">
                 Money-back guarantee
@@ -105,7 +113,7 @@ export default function HowItWorks() {
                 dolor sit amet.{" "}
               </p>
             </div>
-          </div> */}
+          </div>
         </div>
       </div>
     </>
