@@ -6,6 +6,7 @@ import HowItWorks from "@/section/HowItWorks";
 import OurUniqueBenefits from "@/section/OurUniqueBenefits";
 import StudentsAndChefSection from "@/section/ChefSection";
 import Image from "next/image";
+import StudentSection from "@/section/StudentSection";
 
 
 export default function Home() {
@@ -18,6 +19,7 @@ export default function Home() {
       <BenefitsSection/>
       <HowItWorks/>
       <StudentsAndChefSection/>
+      <StudentSection/>
     </div>
   );
 }

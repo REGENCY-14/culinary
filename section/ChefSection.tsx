@@ -24,8 +24,8 @@ export default function StudentsAndChefSection() {
   ];
   return (
     <>
-      <div className={`${rubik.className} lg:flex lg:flex-row-reverse`}>
-        <div className="md:w-[583px] place-self-center h-[386.45px] rounded-[32px] overflow-hidden lg:w-1/2 mr-4">
+      <div className={`${rubik.className} lg:flex lg:flex-row-reverse mb-5`}>
+        <div className="md:w-[583px] place-self-center lg:h-[386.45px] ;lg:rounded-[32px] md:overflow-hidden lg:w-1/2 lg:mr-4">
           <Image src="/images/ch.jpeg" alt="" width={1000} height={1000} />
         </div>
         <div className="px-5 md:p-[46px] lg:w-1/2 lg:h-[497px]">
