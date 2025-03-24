@@ -7,6 +7,7 @@ import OurUniqueBenefits from "@/section/OurUniqueBenefits";
 import StudentsAndChefSection from "@/section/ChefSection";
 import Image from "next/image";
 import StudentSection from "@/section/StudentSection";
+import CookBlogSection from "@/section/CookBlogSection";
 
 
 export default function Home() {
@@ -20,6 +21,7 @@ export default function Home() {
       <HowItWorks/>
       <StudentsAndChefSection/>
       <StudentSection/>
+      <CookBlogSection/>
     </div>
   );
 }

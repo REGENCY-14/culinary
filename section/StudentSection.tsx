@@ -32,7 +32,7 @@ export default function StudentSection() {
             />
           </div>
           <div className={`${rubik.className} mt-4 text-white
-           md:w-1/2 md:h-[506px] lg:p-10 lg:w-full`}>
+           md:w-1/2 md:h-[506px] lg:p-10 lg:w-full p-5`}>
             <h1 className="text-[30px] font-[700]">Become A Student</h1>
             <p className="text-[18px] font-[400] mt-2">
               Kick-start your culinary adventure with COOK. We provide a space
