@@ -4,6 +4,7 @@ import ExploreAndLearnSection from "@/section/ExploreAndLearnSection";
 import HeroSection from "@/section/HeroSection";
 import HowItWorks from "@/section/HowItWorks";
 import OurUniqueBenefits from "@/section/OurUniqueBenefits";
+import StudentsAndChefSection from "@/section/ChefSection";
 import Image from "next/image";
 
 
@@ -16,6 +17,7 @@ export default function Home() {
       <OurUniqueBenefits/>
       <BenefitsSection/>
       <HowItWorks/>
+      <StudentsAndChefSection/>
     </div>
   );
 }
