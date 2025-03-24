@@ -25,10 +25,10 @@ export default function StudentsAndChefSection() {
   return (
     <>
       <div className={`${rubik.className}`}>
-        <div>
-          <Image src="/images/ch.jpeg" alt="" width={700} height={100} />
+        <div className="md:w-[583px] place-self-center h-[386.45px] rounded-[32px] overflow-hidden">
+          <Image src="/images/ch.jpeg" alt="" width={1000} height={1000} />
         </div>
-        <div className="px-5">
+        <div className="px-5 md:p-[46px]">
           <h1 className="text-[30px] font-[600] mt-5">Become A Chef</h1>
           <p className="mt-5 text-[18px] font-[400]">
             Share your culinary secrets, inspire cooking enthusiasts worldwide,
@@ -55,7 +55,7 @@ export default function StudentsAndChefSection() {
               ))}
             </div>
           </div>
-          <button className=" place-self-center w-full mt-7 h-[39px] text-white bg-[#D27722] rounded-[4px]">
+          <button className=" place-self-center w-full mt-7 h-[39px] text-white bg-[#D27722] rounded-[4px] md:w-[155px] md:place-content-start">
             Become a tutor
           </button>
           <div className="flex mt-8 gap-3">
