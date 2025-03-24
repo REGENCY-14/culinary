@@ -23,15 +23,16 @@ export default function StudentSection() {
   ];
   return (
     <>
-      <div className="h-full bg-[#d27722] md:flex md:p-8 md:h-[680px]">
-        <div className="h-full relative md:m-8">
+      <div className="h-full bg-[#d27722] md:flex md:p-8 lg:p-0 md:h-[680px] lg:m-10 lg:h-[500px] lg:rounded-[26px]">
+        <div className="h-full relative md:m-8 lg:m-0 lg:w-3/5">
             <img
               src="/images/student.jpeg"
               alt=""
-              className="object-cover md:rounded-[13px] md:h-[506px] md:w-[279px]"
+              className="object-cover md:rounded-[13px] lg:rounded-r-none lg:rounded-l-[26px] md:h-[506px] md:w-[279px] lg:w-full lg:h-full "
             />
           </div>
-          <div className={`${rubik.className} mt-4 text-white px-4 md:w-1/2 md:h-[506px]`}>
+          <div className={`${rubik.className} mt-4 text-white
+           md:w-1/2 md:h-[506px] lg:p-10 lg:w-full`}>
             <h1 className="text-[30px] font-[700]">Become A Student</h1>
             <p className="text-[18px] font-[400] mt-2">
               Kick-start your culinary adventure with COOK. We provide a space

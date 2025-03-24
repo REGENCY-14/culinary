@@ -28,7 +28,7 @@ export default function StudentsAndChefSection() {
         <div className="md:w-[583px] place-self-center lg:h-[386.45px] ;lg:rounded-[32px] md:overflow-hidden lg:w-1/2 lg:mr-4">
           <Image src="/images/ch.jpeg" alt="" width={1000} height={1000} />
         </div>
-        <div className="px-5 md:p-[46px] lg:w-1/2 lg:h-[497px]">
+        <div className="px-5 md:p-[46px] lg:w-1/2">
           <h1 className="text-[30px] font-[600] mt-5">Become A Chef</h1>
           <p className="mt-5 lg:mt-1 text-[18px] font-[400]">
             Share your culinary secrets, inspire cooking enthusiasts worldwide,
