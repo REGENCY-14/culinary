@@ -23,46 +23,48 @@ export default function StudentSection() {
   ];
   return (
     <>
-      <div className="h-auto bg-[#d27722]">
-        <div className="h-[408px]  relative">
-          <Image
-            src="/images/student.jpeg"
-            alt=""
-            fill
-            className="object-cover"
-          />
-        </div>
-        <div className={`${rubik.className} mt-4 text-white px-4`}>
-          <h1 className="text-[30px] font-[700]">Become A Student</h1>
-          <p className="text-[18px] font-[400] mt-2">
-            Kick-start your culinary adventure with COOK. We provide a space for
-            cooking enthusiasts of all levels to learn, explore, and master
-            culinary arts from professional chefs worldwide. So dive in and
-            transform your kitchen into a playground of flavors.
-          </p>
-          <div className="flex mt-5">
-            <div className="">
-              {student.map((content, index) => (
-                <div key={index} className="mt-4 lg:mt-1">
-                  <div className="flex items-start gap-2">
-                    <div>
-                      <FaCircleCheck className="text-white w-[22px] h-[22px]" />
-                    </div>
-
-                    <h3 className="text-[18px] font-bold">
-                      {content.topic}
-                      <span className="font-normal">
-                        {content.content}
-                      </span>{" "}
-                    </h3>
-                  </div>
-                </div>
-              ))}
-            </div>
+      <div className="h-full bg-[#d27722] md:flex md:p-8 md:h-[680px]">
+        <div className="h-full relative md:m-8">
+            <img
+              src="/images/student.jpeg"
+              alt=""
+              className="object-cover md:rounded-[13px] md:h-[506px] md:w-[279px]"
+            />
           </div>
-          <button className="text-white w-full my-10 h-[39px] rounded-[4px] bg-[#d27722] border border-white">Sign Up</button>
+          <div className={`${rubik.className} mt-4 text-white px-4 md:w-1/2 md:h-[506px]`}>
+            <h1 className="text-[30px] font-[700]">Become A Student</h1>
+            <p className="text-[18px] font-[400] mt-2">
+              Kick-start your culinary adventure with COOK. We provide a space
+              for cooking enthusiasts of all levels to learn, explore, and
+              master culinary arts from professional chefs worldwide. So dive in
+              and transform your kitchen into a playground of flavors.
+            </p>
+            <div className="flex mt-5">
+              <div className="">
+                {student.map((content, index) => (
+                  <div key={index} className="mt-4 lg:mt-1">
+                    <div className="flex items-start gap-2">
+                      <div>
+                        <FaCircleCheck className="text-white w-[22px] h-[22px]" />
+                      </div>
+
+                      <h3 className="text-[18px] font-bold">
+                        {content.topic}
+                        <span className="font-normal">
+                          {content.content}
+                        </span>{" "}
+                      </h3>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+            <button className="text-white w-full my-10 h-[39px] rounded-[4px] bg-[#d27722] border border-white md:w-[90px] md:my-4">
+              Sign Up
+            </button>
+          </div>
         </div>
-      </div>
+         
     </>
   );
 }
