@@ -29,10 +29,10 @@ export default function CookBlogSection() {
     <>
       <div className={`mt-15 mx-8 ${rubik.className} `}>
         <h1 className="text-[36px] font-[600]">Cook Blog</h1>
-        <div className="place-self-center mt-7">
+        <div className="place-self-center mt-7 md:grid md:grid-cols-2 md: gap-6 lg:grid-cols-4">
           {delicacies.map((content, index) => (
             <div key={index}>
-              <div className="h-[340px] w-full bg-[#FFDBB8] rounded-3xl border border-[#d27722] overflow-hidden mt-7">
+              <div className="w-full bg-[#FFDBB8] rounded-3xl border border-[#d27722] overflow-hidden mt-7 md:mt-1 h-full">
                 <div className="w-full h-[213px] rounded-t-[8px] relative">
                   <Image
                     src={content.img}
